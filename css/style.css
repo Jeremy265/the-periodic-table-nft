@@ -1,0 +1,100 @@
+:root {
+    font-family: Ubuntu, sans-serif;
+    background: black url("../images/image-from-rawpixel-id-2362220-modified.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    background-color: transparent;
+}
+
+@font-face {
+    font-family: "Font";
+    src: url("../font/Neonscript.ttf");
+}
+
+h1 {
+    margin: 0.4em auto auto;
+    width: 100%;
+    font-size: 5vw;
+    font-weight: 500;
+    text-align: center;
+    font-family: Font, sans-serif;
+    text-shadow: rgb(35, 76, 179) 0 0 5px,
+    rgb(35, 76, 179) 0 0 10px,
+    rgb(255, 144, 255) 0 0 20px,
+    rgb(255, 144, 255) 0 0 30px;
+    color: rgba(255, 255, 255, 0.8);
+    white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 11vw;
+    }
+}
+
+img {
+    width: 75px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.image_container:hover {
+    position: relative;
+    z-index: 999;
+    transform: scale(2);
+    -webkit-transform: scale(2);/* (150% zoom)*/
+}
+
+.coming_soon{
+    filter: brightness(40%);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.coming_soon_label{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image_container{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    transition: transform 0.2s;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;/* Animation */
+}
+
+td {
+    width: 75px;
+}
+
+
+.swal2-popup {
+    overflow-y: auto;
+    overflow-x: auto;
+    width: auto !important;
+    max-height: 80% !important;
+}
+
+nft-card {
+    width: auto !important;
+}
+
+table td {
+    border-top: 0px transparent;
+    padding: 1px;
+}
+
+table {
+    margin: auto;
+}
+.table-responsive {
+	padding: 40px;
+}
